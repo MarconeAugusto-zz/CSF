@@ -1,0 +1,35 @@
+
+# Criado por https://www.gitignore.io/api/matlab
+# Editar em https://www.gitignore.io/?templates=matlab
+
+### MATLAB ###
+# Extensão de auto-salvamento padrão do Windows
+* .asv
+
+Extensão de auto-salvamento padrão # OSX / * nix
+* m
+
+# Binários MEX compilados (todas as plataformas)
+* .mex *
+
+# Aplicativos compactados e arquivos de caixa de ferramentas
+* .mlappinstall
+* .mltbx
+
+# Pastas de pesquisa de ajuda geradas
+pesquisa de ajuda * /
+
+# Pastas de geração de código Simulink
+slprj /
+sccprj /
+
+# Pastas de geração de código Matlab
+codegen /
+
+Extensão de salvamento automático # Simulink
+*.salvamento automático
+
+# Informações da sessão do Octave
+octave-workspace
+
+# Fim de https://www.gitignore.io/api/matlab
