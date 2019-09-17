@@ -29,7 +29,7 @@ hRayChan.MaximumDopplerShift = 5;
 hConstDiagram = comm.ConstellationDiagram( ...
     'Name', 'Received Signal After Rayleigh Fading');
 
-numFrames = 5000;
+numFrames = 50000;
 
 for n = 1:numFrames
     msg = randi([0 3],bitsPerFrame,1);
