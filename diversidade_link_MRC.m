@@ -15,7 +15,7 @@ canal2.StoreHistory = 1;
 sinal_rx1 = filter(canal1, info_mod); %sinal rx1 = informação x canal 1
 ganho_canal1 = canal1.PathGains;    %ganho canal 1
 sinal_rx2 = filter(canal2, info_mod); %sinal rx2 = informação x canal 2
-ganho_canal2 = canal2.PathGains;    %ganho canal 1
+ganho_canal2 = canal2.PathGains;    %ganho canal 2
 
 for SNR = 0:15 %simular um ruido de 26 valores diferentes modificando a razão SNR
     sinal_rx1_awgn = awgn(sinal_rx1, SNR);
