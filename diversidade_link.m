@@ -37,13 +37,16 @@ for SNR = 0:25 %simular um ruido de 26 valores diferentes modificando a razão SN
     [num2(SNR+1), taxa2(SNR+1)] = biterr(info, (sinal_demod_1Tx1Rx));
 end
 figure(1)
-plot(20*log10(abs(ganho_canal1)),'b');grid minor;
+plot(20*log10(abs(ganho_canal1)),'b');grid minor;xlim([0 500]);
 hold on
 plot(20*log10(abs(ganho_canal2)),'r')
 hold on
 plot(20*log10(abs(ganho_eq)),'y')
+legend('Ganho canal 1','Ganho canal 2','Ganho equivalente');
 
 figure(2)
 semilogy([0:25],taxa,'b', [0:25],taxa2,'r');grid minor;
+title('SNR');
+legend('Antena 1', 'Antena 2');
     
 
